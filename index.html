@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>swati</title>
+    <title>Document</title>
 </head>
 <button id="playButton" style="display:none;">Music</button>
 <audio id="bgMusic" loop>
@@ -15,61 +15,62 @@
 </video>
 
 <body>
-    <p><b>use headphone</b></p>
+    <div id="voiceControls" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+        <button id="readAloudBtn"
+            style="background: linear-gradient(135deg, #f1edf5, #383738); color: white; border: none; border-radius: 50%; width: 60px; height: 60px; font-size: 24px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">🔊</button>
+        <button id="stopReadingBtn"
+            style="display: none; background: linear-gradient(135deg, #ccc9ca, #302e2e); color: white; border: none; border-radius: 50%; width: 60px; height: 60px; font-size: 24px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.3); margin-left: 10px;">✋</button>
+    </div>
+
     <p><b>SHE</b></p>
     <hr>
     <img src="https://i.pinimg.com/736x/61/bd/10/61bd10c0f2efe2c45858ad615b12f10d.jpg" width="150px">
     <aside>
         <ul>
             <li>
-                <p><b>She’s there for the adventures, the lazy days, and the messy in-between.</b></p>
+                <p class="readable"><b>She's there for the adventures, the lazy days, and the messy in-between.</b></p>
             </li>
             <li>
-                <p><b>Reflects my best traits and challenges me, where i need growth.</b></p>
+                <p class="readable"><b>Reflects my best traits and challenges me, where i need growth.</b></p>
             </li>
             <li>
-                <p><b>The arms i crave after a long day, the laugh that fixes everything.</b></p>
+                <p class="readable"><b>The arms i crave after a long day, the laugh that fixes everything.</b></p>
             </li>
             <li>
-                <p><b>The person i imagine beside me in dreams i haven’t even built yet.</b></p>
+                <p class="readable"><b>The person i imagine beside me in dreams i haven't even built yet.</b></p>
             </li>
         </ul>
     </aside>
     <section>
-        <P><b>She’s the "you got this" before your big moment, the "I made you coffee" on your worst morning, and the
-                "we’ll
-                figure it out" when life feels heavy.</b></P>
+        <P class="readable"><b>She's the "you got this" before your big moment, the "I made you coffee" on your worst
+                morning, and the "we'll figure it out" when life feels heavy.</b></P>
     </section>
     <section>
-        <h1>MY FEELING FOR HER</h1>
-        <P1><B><BR>:> Being with her feels like coming home. She makes ordinary moments special just by being there. Her
-                smile lights up my world, and her laugh is my favorite sound. I admire her strength, her kindness, and
-                the way
-                shesees the best in people—especially me. Every day with her feels like a gift.</BR>
-                <BR>:> She’s all I think about.When she walks into a room, my heart races. There’s a fire in the way I
-                love
-                her—something fierce and unstoppable. She challenges me, excites me, and makes me feel alive in a way no
-                one else ever
-                has.</BR>
-                <BR>:> With her, I feel completely at peace. She understands me in a way no one else does. It’s
-                not just about romance—it’s about how safe, valued, and truly seen she makes me feel. I want to grow
-                with her, support
-                her, and love her through every chapter of life.</BR>
-                <br>:> I don’t have all the words yet, but she makes me feel things I’ve never felt before. When I’m
-                with
-                her, everything just… fits. I want to be better for
-                her, to make her happy, and to keep discovering what this connection between us really is.</br>
+        <h1 class="readable">MY FEELING FOR HER</h1>
+        <P1 class="readable"><B><BR>:> Being with her feels like coming home. She makes ordinary moments special just by
+                being there. Her smile lights up my world, and her laugh is my favorite sound. I admire her strength,
+                her kindness, and the way she sees the best in people—especially me. Every day with her feels like a
+                gift.</BR>
+                <BR>:> She's all I think about.When she walks into a room, my heart races. There's a fire in the way I
+                love her—something fierce and unstoppable. She challenges me, excites me, and makes me feel alive in a
+                way no one else ever has.</BR>
+                <BR>:> With her, I feel completely at peace. She understands me in a way no one else does. It's not just
+                about romance—it's about how safe, valued, and truly seen she makes me feel. I want to grow with her,
+                support her, and love her through every chapter of life.</BR>
+                <br>:> I don't have all the words yet, but she makes me feel things I've never felt before. When I'm
+                with her, everything just... fits. I want to be better for her, to make her happy, and to keep
+                discovering what this connection between us really is.</br>
             </B></P1>
     </section>
     <section>
-        <h1><b>WHY HER</b></h1>
-        <p1><b>:> Why her? It's that feeling, you know? Like a quiet hum in your chest that just says, "Yeah, this is
-                right." She truly gets you, even the messy bits you hide from everyone else, and sees the person you're
-                striving to be. With her, you're not just some guy navigating life; you're home, a place where you can
-                finally just be.</b></p1>
+        <h1 class="readable"><b>WHY HER</b></h1>
+        <p1 class="readable"><b>:> Why her? It's that feeling, you know? Like a quiet hum in your chest that just says,
+                "Yeah, this is right." She truly gets you, even the messy bits you hide from everyone else, and sees the
+                person you're striving to be. With her, you're not just some guy navigating life; you're home, a place
+                where you can finally just be.</b></p1>
     </section>
     <section>
-        <p><b>now its time for ur birthday </b></p>
+        <p class="readable"><b>now its time for ur birthday </b></p>
     </section>
     <a href="page2.html" class="click-button">Click Here</a>
     <style>
@@ -234,6 +235,33 @@
         .playing .music-icon {
             animation: pulse 1.5s infinite;
         }
+
+        .highlight {
+            background-color: rgba(77, 77, 71, 0.3);
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+        .highlight::before {
+            content: "";
+            position: absolute;
+            left: -15px;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background: linear-gradient(to bottom, #fff, #aaa);
+            border-radius: 3px;
+        }
+
+        .line-indicator {
+            position: absolute;
+            left: -10px;
+            width: 3px;
+            background-color: white;
+            border-radius: 3px;
+            transition: all 0.1s linear;
+            z-index: 10;
+        }
     </style>
     <script>
         const playButton = document.getElementById("playButton");
@@ -243,7 +271,6 @@
 
         if (playPromise !== undefined) {
             playPromise.catch(error => {
-
                 playButton.style.display = "block";
             });
         }
@@ -252,6 +279,203 @@
             bgMusic.play();
             playButton.textContent = "Music Playing...";
         });
+
+        // Enhanced voice reading functionality with teen boy voice simulation
+        const readAloudBtn = document.getElementById("readAloudBtn");
+        const stopReadingBtn = document.getElementById("stopReadingBtn");
+        const readableElements = document.querySelectorAll('.readable');
+        let currentElementIndex = 0;
+        let speechSynthesis = window.speechSynthesis;
+        let utterance = null;
+        let lineIndicator = null;
+        let currentHighlight = null;
+
+        readAloudBtn.addEventListener('click', () => {
+            if (speechSynthesis.speaking) {
+                speechSynthesis.cancel();
+            }
+
+            readAloudBtn.style.display = 'none';
+            stopReadingBtn.style.display = 'block';
+            currentElementIndex = 0;
+            readNextElement();
+        });
+
+        stopReadingBtn.addEventListener('click', () => {
+            speechSynthesis.cancel();
+            stopReadingBtn.style.display = 'none';
+            readAloudBtn.style.display = 'block';
+
+            // Remove highlights and line indicator
+            document.querySelectorAll('.highlight').forEach(el => {
+                el.classList.remove('highlight');
+            });
+            if (lineIndicator) {
+                lineIndicator.remove();
+                lineIndicator = null;
+            }
+        });
+
+        function getTeenBoyVoiceSettings(text) {
+            // Try to find a teen boy voice (note: browser support varies)
+            const voices = speechSynthesis.getVoices();
+            let teenBoyVoice = voices.find(voice =>
+                voice.name.includes('Male') &&
+                (voice.name.includes('Teen') || voice.name.includes('Young') || voice.lang === 'en-US')
+            );
+
+            // Fallback to first male voice or default
+            if (!teenBoyVoice) {
+                teenBoyVoice = voices.find(voice => voice.name.includes('Male')) || voices[0];
+            }
+
+            return teenBoyVoice;
+        }
+
+        function getEmotionalSettings(text) {
+            // Determine emotional tone based on content
+            const lovingPhrases = ['love her', 'adore her', 'her smile', 'her laugh', 'coming home', 'feels like a gift'];
+            const passionatePhrases = ['fire', 'fierce', 'unstoppable', 'heart races', 'alive', 'excites me'];
+            const tenderPhrases = ['peace', 'safe', 'valued', 'seen', 'understand', 'home'];
+
+            if (lovingPhrases.some(phrase => text.toLowerCase().includes(phrase))) {
+                return { rate: 1.1, pitch: 1.15, volume: 1 }; // Slightly faster, higher pitch
+            } else if (passionatePhrases.some(phrase => text.toLowerCase().includes(phrase))) {
+                return { rate: 1.2, pitch: 1.2, volume: 1.1 }; // Faster, higher pitch, louder
+            } else if (tenderPhrases.some(phrase => text.toLowerCase().includes(phrase))) {
+                return { rate: 0.9, pitch: 0.95, volume: 0.9 }; // Slower, slightly lower pitch, softer
+            }
+            return { rate: 1.0, pitch: 1.05, volume: 1 }; // Default (slightly higher pitch for teen)
+        }
+
+        function createLineIndicator(element) {
+            if (lineIndicator) lineIndicator.remove();
+
+            lineIndicator = document.createElement('div');
+            lineIndicator.className = 'line-indicator';
+            element.appendChild(lineIndicator);
+
+            // Position at top initially
+            lineIndicator.style.height = '2px';
+            lineIndicator.style.top = '0';
+        }
+
+        function updateLineIndicator(element, progress) {
+            if (!lineIndicator) return;
+
+            const elementHeight = element.offsetHeight;
+            const newTop = progress * elementHeight;
+            lineIndicator.style.top = `${newTop}px`;
+            lineIndicator.style.height = '2px';
+        }
+
+        function readNextElement() {
+            if (currentElementIndex >= readableElements.length) {
+                stopReadingBtn.style.display = 'none';
+                readAloudBtn.style.display = 'block';
+
+                // Remove highlights and line indicator
+                document.querySelectorAll('.highlight').forEach(el => {
+                    el.classList.remove('highlight');
+                });
+                if (lineIndicator) {
+                    lineIndicator.remove();
+                    lineIndicator = null;
+                }
+                return;
+            }
+
+            // Remove previous highlight
+            if (currentElementIndex > 0) {
+                readableElements[currentElementIndex - 1].classList.remove('highlight');
+                if (lineIndicator) {
+                    lineIndicator.remove();
+                    lineIndicator = null;
+                }
+            }
+
+            const currentElement = readableElements[currentElementIndex];
+            const text = currentElement.textContent || currentElement.innerText;
+
+            // Highlight current element
+            currentElement.classList.add('highlight');
+            currentHighlight = currentElement;
+
+            // Scroll to element
+            currentElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Create line indicator
+            createLineIndicator(currentElement);
+
+            // Get emotional settings
+            const emotionalSettings = getEmotionalSettings(text);
+
+            utterance = new SpeechSynthesisUtterance(text);
+
+            // Set voice to teen boy if available
+            const voices = speechSynthesis.getVoices();
+            if (voices.length > 0) {
+                const teenBoyVoice = getTeenBoyVoiceSettings(text);
+                if (teenBoyVoice) {
+                    utterance.voice = teenBoyVoice;
+                }
+            }
+
+            utterance.rate = emotionalSettings.rate;
+            utterance.pitch = emotionalSettings.pitch;
+            utterance.volume = emotionalSettings.volume;
+
+            // Track progress for line indicator
+            let startTime = Date.now();
+            let duration = text.length * 60; // Approximate duration in ms
+
+            const progressInterval = setInterval(() => {
+                if (!utterance) {
+                    clearInterval(progressInterval);
+                    return;
+                }
+                const elapsed = Date.now() - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                updateLineIndicator(currentElement, progress);
+            }, 50);
+
+            utterance.onboundary = (event) => {
+                if (event.name === 'word') {
+                    // You could add additional effects here for word-by-word highlighting
+                }
+            };
+
+            utterance.onend = () => {
+                clearInterval(progressInterval);
+                currentElement.classList.remove('highlight');
+                if (lineIndicator) {
+                    lineIndicator.remove();
+                    lineIndicator = null;
+                }
+                currentElementIndex++;
+                setTimeout(readNextElement, 500);
+            };
+
+            utterance.onerror = (event) => {
+                clearInterval(progressInterval);
+                console.error('SpeechSynthesis error:', event);
+            };
+
+            // Chrome needs voices to be loaded
+            if (speechSynthesis.getVoices().length === 0) {
+                speechSynthesis.onvoiceschanged = function () {
+                    speechSynthesis.speak(utterance);
+                };
+            } else {
+                speechSynthesis.speak(utterance);
+            }
+        }
+
+        // Check if speech synthesis is supported
+        if (!speechSynthesis) {
+            readAloudBtn.style.display = 'none';
+            console.log("Text-to-speech not supported in this browser.");
+        }
     </script>
 </body>
 
